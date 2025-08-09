@@ -12,8 +12,8 @@
 
 #include "ft_printf.h"
 
-void	ft_manage_err(void)
+int	ft_manage_err(void)
 {
 	write(2, "Format error\n", 13);
-	exit(1);
+	return (-1);
 }

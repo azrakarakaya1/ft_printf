@@ -2,7 +2,7 @@ NAME = libftprintf.a
 CC = cc
 FLAG = -Wall -Wextra -Werror
 
-SRC = 
+SRC = ft_format.c  ft_manage_err.c  ft_printf.c  ft_treat_format.c
 
 OBJ = $(SRC:.c=.o)
 

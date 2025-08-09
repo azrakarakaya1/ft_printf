@@ -24,7 +24,7 @@ int	ft_printf(const char *format, ...)
 	{
 		if (*format == '%' && *(format + 1))
 		{
-			tmp = ft_format(*(++format), args);
+			tmp = ft_format(args, *(++format));
 			if (tmp < 0)
 				ft_manage_err();
 			ret += tmp;
